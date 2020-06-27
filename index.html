@@ -126,7 +126,7 @@
         onSubmit: function (event) {
           this.waiting = true;
           superagent
-            .get(apiBaseUrl + '/api/HttpTrigger1')
+            .get(apiBaseUrl + '/api/ImageClassifier')
             .query({ img: this.url })
             .end(function (err, res) {
               this.waiting = false;
